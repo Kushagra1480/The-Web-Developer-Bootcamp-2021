@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .winner{
+            color : green;
+        }
+        .loser{
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column is-4 is-offset-one-third card">
+            <header class="card-header">
+                <p class="card-header content is-large">Ping Pong Score Keeper</p>    
+            </header>   
+            <img src="https://nwscdn.com/media/wysiwyg/3kf/Bat-and-ball-included-in-the-set.jpg" alt="ping pong">
+            <h2 class="content is-medium"><span id="p1Score">0</span> to <span id="p2Score">0</span></h2>
+            <label for="roundChoice">Playing to</label>
+            <select name="rounds" id="roundChoice">
+                <option value="">Choose</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <footer class="card-footer">
+                <button id="p1Button" class="button is-primary is-default">+1 Player 1</button>
+                <button id="p2Button" class="button is-link is-default">+1 Player 2</button>
+                <button id="resetButton" class="button is-danger is-default">Reset</button>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</html>
